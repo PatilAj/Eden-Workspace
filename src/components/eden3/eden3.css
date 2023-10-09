@@ -1,0 +1,100 @@
+.eden3_body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh; 
+  width: 100%;
+  padding: 6px;
+}
+
+.eden3_header {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.para {
+  font-size: 22px;
+  color: grey;
+}
+
+.optional-card{
+  display: flex;
+  justify-content: space-between;
+  gap: 8rem;
+}
+.card{
+  padding-left: 1rem;
+  padding-top: 1.5rem;
+  width: 14rem;
+  height: 15rem;
+  border-radius: 10px;
+  border: 1px solid rgb(173, 172, 172);
+}
+
+.card:hover {
+  border: 1px solid rgba(98, 101, 240, 255) !important;
+}
+.card:hover .Self-icon,
+.Self-icon:hover {
+fill: rgba(98, 101, 240, 255) !important;
+}
+.card.checked {
+border: 1px solid rgba(98, 101, 240, 255) !important;
+}
+
+.card.checked .Self-icon {
+fill: rgba(98, 101, 240, 255) !important;
+}
+
+.card.checked {
+  border: 1px solid rgba(98, 101, 240, 255) !important;
+  background-color: rgba(98, 101, 240, 255);
+  color: #fff;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+}
+
+.Self-icon {
+  fill: rgb(117, 117, 117);
+}
+
+.card-title {
+  padding-top: 1rem;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: start;
+}
+
+.card-text {
+  width: 100%; 
+  text-align: start;
+  font-size: large;
+  color: rgb(58, 58, 58);
+}
+
+@media screen and (max-width: 768px) {
+  .optional-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  
+  .card {
+    padding: 1rem;
+    height: 11rem;
+    width: 100%; 
+    max-width: 300px;
+    border-radius: 10px;
+    border: 1px solid rgb(173, 172, 172);
+    cursor: pointer; 
+    transition: border 0.4s, background-color 0.4s;
+  }
+}
