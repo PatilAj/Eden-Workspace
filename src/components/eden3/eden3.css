@@ -5,7 +5,6 @@
   justify-content: center;
   min-height: 60vh; 
   width: 100%;
-  padding: 6px;
 }
 
 .eden3_header {
@@ -27,9 +26,9 @@
 }
 .card{
   padding-left: 1rem;
-  padding-top: 1.5rem;
+  padding-top: 0.5rem;
   width: 14rem;
-  height: 15rem;
+  height: 14rem;
   border-radius: 10px;
   border: 1px solid rgb(173, 172, 172);
 }
@@ -39,13 +38,6 @@
 }
 .card:hover .Self-icon,
 .Self-icon:hover {
-fill: rgba(98, 101, 240, 255) !important;
-}
-.card.checked {
-border: 1px solid rgba(98, 101, 240, 255) !important;
-}
-
-.card.checked .Self-icon {
 fill: rgba(98, 101, 240, 255) !important;
 }
 
@@ -62,11 +54,11 @@ fill: rgba(98, 101, 240, 255) !important;
 }
 
 .Self-icon {
+  padding-bottom: 0.5rem;
   fill: rgb(117, 117, 117);
 }
 
 .card-title {
-  padding-top: 1rem;
   font-size: 25px;
   font-weight: bold;
   text-align: start;
